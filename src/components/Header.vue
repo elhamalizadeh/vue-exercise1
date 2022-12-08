@@ -3,6 +3,7 @@
     <h1>Header Part</h1>
     <router-link :to="{name:'Home'}">Home</router-link>
     <router-link :to="{name:'aboutUs'}">aboutUs</router-link>
+    <router-link :to="{name:'contact'}">Contact</router-link>
     </div>
 </template>
 <script>

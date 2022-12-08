@@ -3,16 +3,19 @@
  <HelloWorld msg="Welcome to Your Vue.js App"/>-->
   <header-section/>
   <router-view></router-view>
+  <FooterSection/>
 
 </template>
 
 <script>
+import FooterSection from './components/Footer.vue'
 import HeaderSection from './components/Header.vue'
 
 export default {
   name: 'App',
   components: {
-   HeaderSection
+   HeaderSection,
+    FooterSection
   }
 }
 </script>
