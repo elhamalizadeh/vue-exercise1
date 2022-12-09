@@ -3,11 +3,13 @@
     <div class="row">
     <h1>Contact Us</h1>
     <div class="col-3 bg-primary">
-    {{ message }}
+    <span>{{message}}</span>
     <button v-on:click="reverse">Reverse</button>
     <button @click="normal">normal</button>
     </div>
-    <div class="col-9"></div>
+    <div class="col-9">
+      <input type="text" v-model="name" /><!--- dont work -->
+    </div>
     </div>
   </div>
 </template>
@@ -17,17 +19,16 @@ export default {
   data() {
     return {
       message: "hello",
+      result: ' ',
+      name:''
     };
   },
   methods: {
     reverse() {
-      let message = this.message.split('').reverse().join('');
-      console.log("reverse is here");
-      console.log(message)
-      return message;
+      this.message = this.message.split('').reverse().join('');
     },
     normal(){
-        console.log("normal is here");
+       this.message = this.message.split('').reverse().join('');
     }
   },
 };
