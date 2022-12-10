@@ -8,7 +8,8 @@
     <button @click="normal">normal</button>
     </div>
     <div class="col-9">
-      <input type="text" v-model="name" /><!--- dont work -->
+      <input type="text" v-model="name" ><!--- dont work -->
+      <p>{{ name }}</p>
     </div>
     </div>
   </div>
