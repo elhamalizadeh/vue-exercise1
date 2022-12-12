@@ -1,11 +1,13 @@
 <template>
 <div class="container" id="body">
     <h1>This is Home Page</h1>
+
     </div>
 </template>
 <script>
-export default{
-    name: 'HomePage'
+export default {
+     name: 'HomePage',
+
 }
 </script>
 <style scoped>
