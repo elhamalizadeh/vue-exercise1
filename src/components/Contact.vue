@@ -3,6 +3,7 @@
         <h1>Contact Us</h1>
     <div class="row">
     <div class="col-md-3 bg-primary">
+      <h2>Sidebar</h2>
       Enter a text and try to reverse it.
       it is a funny game
     </div>

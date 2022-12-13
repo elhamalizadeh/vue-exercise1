@@ -1,13 +1,15 @@
 <template>
 <div class="" id="headerPart">
+    <div class="container" >
     <h1>Header Part</h1>
-    <router-link :to="{name:'Home'}">Home</router-link>
-    <router-link :to="{name:'aboutUs'}">aboutUs</router-link>
-    <router-link :to="{name:'contact'}">Contact</router-link>
-    <router-link :to="{name:'computedWatch'}">computed</router-link>
-    <router-link :to="{name:'tranSition'}">transition</router-link>
+    <router-link :to="{name:'Home'}" id="alink">Home</router-link>
+    <router-link :to="{name:'aboutUs'}" id="alink">aboutUs</router-link>
+    <router-link :to="{name:'contact'}" id="alink">Contact</router-link>
+    <router-link :to="{name:'computedWatch'}" id="alink">computed</router-link>
+    <router-link :to="{name:'tranSition'}" id="alink">transition</router-link>
 
-    <h1>{{ siteTitle }}</h1>
+    <h1 class="text-center">{{ siteTitle }}</h1>
+    </div>
     </div>
 </template>
 <script>
@@ -25,12 +27,12 @@ export default{
     color:white;
     margin-bottom: 50px;
 }
-a {
+#alink {
 color:white;
 text-decoration: none;
 margin-left:20px;
 }
-a.hover{
+#alink.hover{
     color:blueviolet;
 }
 </style>

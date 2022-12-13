@@ -1,17 +1,25 @@
 <template>
-  <div class="" id="footer">
+  <div class="fixed-bottom" id="footer">
     <div class="container">
     <h1>Footer Part</h1>
-    <p>Name is : {{ userName }}</p>
+    <p>Name is : {{ userInfo.name }}</p>
     <p>Last name is : {{ lastName }}</p>
-    <p></p>
+    <p>age is : {{ age }}</p> 
     </div>
   </div>
 </template>
 <script>
 export default {
   name: "FooterSection",
-      props: ['userName','lastName','age'],
+      //props: ['userName','lastName','age'],  // ---------- method 1: here we recieve data with array
+
+      // --------Method 2: we can also use onject for props
+      props: {
+         userName: String,
+        lastName: String,
+         age : Number,
+        userInfo : Object
+      }
 };
 </script>
 <style scoped>

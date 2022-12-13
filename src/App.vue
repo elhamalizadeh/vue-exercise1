@@ -1,10 +1,11 @@
 <template>
    <!--<img alt="Vue logo" src="./assets/logo.png">
  <HelloWorld msg="Welcome to Your Vue.js App"/>-->
+   <header-section :site-title="title"/>
  <div class="container" id="content">
-  <header-section :site-title="title"/>
+
   <router-view></router-view>
-  <FooterSection  :user-name="name" :last-name="family" :age="age"/>
+  <FooterSection  :user-name="name" :last-name="family" :age="age" :user-info="userInfo"/>
    </div>
 
 </template>
@@ -18,10 +19,17 @@ export default {
   name: 'App',
   data(){
     return {
-        name: "elham",
-        family: "alizadeh",
-        age: 35,
-title : "bonitadm.com"
+         name: "elham",
+         family: "alizadeh",
+         age: 35,
+         title : "bonitadm.com",
+
+        userInfo:{
+           name: "elham",
+           family: "alizadeh",
+           age: 35,
+           title : "bonitadm.com",
+        }
     }
   },
   components: {
@@ -31,17 +39,17 @@ title : "bonitadm.com"
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+
 }
 #content{
   height: 900px;
-  background-color: blueviolet;
+  background-color:linen;
 }
 </style>

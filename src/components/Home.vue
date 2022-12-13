@@ -15,7 +15,6 @@ export default {
 </script>
 <style>
 #body{
-    background-color: aquamarine;
     height: 900px;
     color:blue;
 }

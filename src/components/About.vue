@@ -1,7 +1,14 @@
 <template>
-  <div class="div" :class="{ pink: pinkcolor }" @click="changecolor">
+  <div class="container" :class="{ pink: pinkcolor }" @click="changecolor">
+    <div class="row">
     <h1>About Us Page</h1>
-    <span>Click to change background color</span>
+    <div class="col-md-3 bg-primary">
+    <h2>Sidebar</h2>
+    </div>
+    <div class="col-md-9" id="content">
+      <span>Click to change background color</span>
+      </div>
+      </div>
   </div>
 </template>
 <script>
@@ -26,6 +33,9 @@ export default {
 }
 .pink {
   background-color: rgb(209, 105, 209);
-  color: white;
+  color: blue;
+}
+#content{
+height: 400px;
 }
 </style>
