@@ -5,6 +5,7 @@
     <router-link :to="{name:'aboutUs'}">aboutUs</router-link>
     <router-link :to="{name:'contact'}">Contact</router-link>
     <router-link :to="{name:'computedWatch'}">computed</router-link>
+    <router-link :to="{name:'tranSition'}">transition</router-link>
     </div>
 </template>
 <script>

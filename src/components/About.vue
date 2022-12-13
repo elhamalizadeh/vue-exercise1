@@ -1,6 +1,7 @@
 <template>
   <div class="div" :class="{ pink: pinkcolor }" @click="changecolor">
-    <h1>About Us Page hooora</h1>
+    <h1>About Us Page</h1>
+    <span>Click to change background color</span>
   </div>
 </template>
 <script>
@@ -24,7 +25,7 @@ export default {
   padding: 20px;
 }
 .pink {
-  background-color: pink;
-  color: purple;
+  background-color: rgb(209, 105, 209);
+  color: white;
 }
 </style>
