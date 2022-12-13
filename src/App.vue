@@ -1,18 +1,29 @@
 <template>
    <!--<img alt="Vue logo" src="./assets/logo.png">
  <HelloWorld msg="Welcome to Your Vue.js App"/>-->
-  <header-section/>
+ <div class="container" id="content">
+  <header-section :site-title="title"/>
   <router-view></router-view>
-  <FooterSection/>
+  <FooterSection  :user-name="name" :last-name="family" :age="age"/>
+   </div>
 
 </template>
 
 <script>
 import FooterSection from './components/Footer.vue'
 import HeaderSection from './components/Header.vue'
+//import Home from './components/Home.vue'
 
 export default {
   name: 'App',
+  data(){
+    return {
+        name: "elham",
+        family: "alizadeh",
+        age: 35,
+title : "bonitadm.com"
+    }
+  },
   components: {
    HeaderSection,
     FooterSection
@@ -28,5 +39,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+#content{
+  height: 900px;
+  background-color: blueviolet;
 }
 </style>
