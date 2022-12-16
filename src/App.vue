@@ -29,6 +29,7 @@ export default {
            family: "alizadeh",
            age: 35,
            title : "bonitadm.com",
+           description : "BonitaDm is a digital marketing advertising agency that deliver SEO services, web designing, content creation, Pay per click advertising and google ads"
         }
     }
   },
