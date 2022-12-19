@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed-bottom" id="footer">
+  <div class="" id="footer">
     <div class="container">
       <div class="row">
         <div class="col-md-4">{{ userInfo.description }}</div>

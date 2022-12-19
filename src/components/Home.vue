@@ -5,7 +5,6 @@
 
 <!--<p>Name is : {{ userName }}</p>
 <p>Last name is : {{ userLastname }}</p>-->
-
     </div>
 </template>
 <script>
@@ -15,7 +14,7 @@ export default {
 </script>
 <style>
 #body{
-    height: 900px;
+    height: 600px;
     color:blue;
 }
 </style>

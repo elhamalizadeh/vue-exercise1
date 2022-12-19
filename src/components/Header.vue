@@ -7,6 +7,7 @@
     <router-link :to="{name:'contact'}" id="alink">Contact</router-link>
     <router-link :to="{name:'computedWatch'}" id="alink">computed</router-link>
     <router-link :to="{name:'tranSition'}" id="alink">transition</router-link>
+    <router-link :to="{name:'composableFunction'}" id="alink">composable </router-link>
 
     <h1 class="text-center">{{ siteTitle }}</h1>
     </div>

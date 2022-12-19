@@ -5,8 +5,10 @@
  <div class="container" id="content">
 
   <router-view></router-view>
+ 
+  </div>
   <FooterSection  :user-name="name" :last-name="family" :age="age" :user-info="userInfo"/>
-   </div>
+   
 
 </template>
 
@@ -50,7 +52,7 @@ export default {
 
 }
 #content{
-  height: 900px;
+  height: 700px;
   background-color:linen;
 }
 </style>
