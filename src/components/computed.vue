@@ -1,6 +1,11 @@
 <template>
-  <div>
-    <!-------  write 'vue' to have a readey template --->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <sideBar />
+      </div>
+      <div class="col-md-9">
+        <!-------  write 'vue' to have a readey template --->
     <h1>Computed watch</h1>
     Name:<input type="text" v-model="nam" />
     <p>Name: {{ changeInput() }}</p>
@@ -8,13 +13,18 @@
     <p>show Active: {{ showActive }}</p>
         <p>Has published books:</p>
 <span>{{ publishedBooksMessage }}</span>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import sideBar from "./sidebar.vue";
 export default {
   name: "computedWatch",
-
+   components: {
+    sideBar,
+  },
   data() {
     return {
       nam: " ",

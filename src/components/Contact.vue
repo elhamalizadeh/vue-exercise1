@@ -1,13 +1,14 @@
 <template>
   <div class="container">
-        <h1>Contact Us</h1>
     <div class="row">
-    <div class="col-md-3 bg-primary">
-      <h2>Sidebar</h2>
-      Enter a text and try to reverse it.
-      it is a funny game
+     <div class="col-md-3">
+    <sideBar />
     </div>
     <div class="col-md-9">
+              <h1>Contact Us</h1>
+            Enter a text and try to reverse it.
+      it is a funny game
+      <br/>
       <input type="text" v-model="text" >
       <p>{{ text }}</p>
     <button v-on:click="reverse">Reverse</button>
@@ -58,6 +59,7 @@
   </div>
 </template>
 <script>
+import sideBar from "./sidebar.vue";
 export default {
   name: "contactUs",
   data() {
@@ -74,6 +76,9 @@ export default {
 
       }
     };
+  },
+     components: {
+    sideBar,
   },
   methods: {
     reverse() {

@@ -5,9 +5,7 @@
     <router-link :to="{name:'Home'}" id="alink">Home</router-link>
     <router-link :to="{name:'aboutUs'}" id="alink">aboutUs</router-link>
     <router-link :to="{name:'contact'}" id="alink">Contact</router-link>
-    <router-link :to="{name:'computedWatch'}" id="alink">computed</router-link>
-    <router-link :to="{name:'tranSition'}" id="alink">transition</router-link>
-    <router-link :to="{name:'composableFunction'}" id="alink">composable </router-link>
+    <router-link :to="{name:'methodsList'}" id="alink">methods</router-link>
 
     <h1 class="text-center">{{ siteTitle }}</h1>
     </div>
