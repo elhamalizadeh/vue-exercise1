@@ -1,10 +1,10 @@
 <template>
-  <div class="container" :class="{ pink: pinkcolor }" @click="changecolor">
+  <div class="container">
     <div class="row">
     <div class="col-md-3">
     <sideBar />
     </div>
-    <div class="col-md-9" id="content">
+    <div class="col-md-9" id="content"  :class="{ pink: pinkcolor }" @click="changecolor">
           <h1>About Us Page</h1>
       <span>Click to change background color</span>
       </div>

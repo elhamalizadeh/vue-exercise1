@@ -52,7 +52,7 @@ export default {
 
 }
 #content{
-  height: 700px;
+  height: 1000px;
   background-color:linen;
 }
 </style>
